@@ -1,5 +1,5 @@
 //
-//  UIButton+RoundedButton.swift
+//  UIView+Rounded.swift
 //  ArchTouchChallenge
 //
 //  Created by Gustavo Cavalcanti on 13/11/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable extension UIButton {
+@IBDesignable extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         set {
             layer.cornerRadius = newValue

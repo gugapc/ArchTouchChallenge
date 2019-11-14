@@ -10,13 +10,17 @@
 		281A4F73237C8C5A0053B086 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 281A4F70237C8C5A0053B086 /* SF-Pro-Display-Regular.otf */; };
 		281A4F74237C8C5A0053B086 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 281A4F71237C8C5A0053B086 /* SF-Pro-Display-Bold.otf */; };
 		281A4F75237C8C5A0053B086 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 281A4F72237C8C5A0053B086 /* SF-Pro-Display-Semibold.otf */; };
-		281A4F7B237C9E210053B086 /* UIButton+RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281A4F7A237C9E210053B086 /* UIButton+RoundedButton.swift */; };
 		286EBBDB237C483600F21B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286EBBDA237C483600F21B84 /* AppDelegate.swift */; };
 		286EBBDD237C483600F21B84 /* ChallengeQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286EBBDC237C483600F21B84 /* ChallengeQuestionViewController.swift */; };
 		286EBBE0237C483600F21B84 /* ChallengeQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286EBBDE237C483600F21B84 /* ChallengeQuestion.storyboard */; };
 		286EBBE2237C483800F21B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286EBBE1237C483800F21B84 /* Assets.xcassets */; };
 		286EBBE5237C483800F21B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286EBBE3237C483800F21B84 /* LaunchScreen.storyboard */; };
 		286EBBF0237C483800F21B84 /* ArchTouchChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286EBBEF237C483800F21B84 /* ArchTouchChallengeTests.swift */; };
+		28FB4621237D953D00564C51 /* UIView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB4620237D953D00564C51 /* UIView+Rounded.swift */; };
+		28FE7DD6237CC5F3002A3367 /* QuestionNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE7DD5237CC5F3002A3367 /* QuestionNetwork.swift */; };
+		28FE7DD8237CC7BF002A3367 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE7DD7237CC7BF002A3367 /* QuestionModel.swift */; };
+		28FE7DDA237CDAB8002A3367 /* LoadingAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FE7DD9237CDAB8002A3367 /* LoadingAlert.storyboard */; };
+		28FE7DE2237CFB01002A3367 /* ChallengeQuestionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE7DE1237CFB01002A3367 /* ChallengeQuestionVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +37,6 @@
 		281A4F70237C8C5A0053B086 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		281A4F71237C8C5A0053B086 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		281A4F72237C8C5A0053B086 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
-		281A4F7A237C9E210053B086 /* UIButton+RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+RoundedButton.swift"; sourceTree = SOURCE_ROOT; };
 		286EBBD7237C483600F21B84 /* ArchTouchChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchTouchChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286EBBDA237C483600F21B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286EBBDC237C483600F21B84 /* ChallengeQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeQuestionViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +47,11 @@
 		286EBBEB237C483800F21B84 /* ArchTouchChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchTouchChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		286EBBEF237C483800F21B84 /* ArchTouchChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchTouchChallengeTests.swift; sourceTree = "<group>"; };
 		286EBBF1237C483800F21B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FB4620237D953D00564C51 /* UIView+Rounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded.swift"; sourceTree = "<group>"; };
+		28FE7DD5237CC5F3002A3367 /* QuestionNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionNetwork.swift; path = ArchTouchChallenge/QuestionNetwork.swift; sourceTree = SOURCE_ROOT; };
+		28FE7DD7237CC7BF002A3367 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		28FE7DD9237CDAB8002A3367 /* LoadingAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadingAlert.storyboard; sourceTree = SOURCE_ROOT; };
+		28FE7DE1237CFB01002A3367 /* ChallengeQuestionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeQuestionVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +85,10 @@
 		281A4F76237C9C180053B086 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				28FB4620237D953D00564C51 /* UIView+Rounded.swift */,
 				286EBBDE237C483600F21B84 /* ChallengeQuestion.storyboard */,
 				286EBBE3237C483800F21B84 /* LaunchScreen.storyboard */,
-				281A4F7A237C9E210053B086 /* UIButton+RoundedButton.swift */,
+				28FE7DD9237CDAB8002A3367 /* LoadingAlert.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,6 +104,8 @@
 		281A4F78237C9C2D0053B086 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				28FE7DD5237CC5F3002A3367 /* QuestionNetwork.swift */,
+				28FE7DE1237CFB01002A3367 /* ChallengeQuestionVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -102,6 +113,7 @@
 		281A4F79237C9C3D0053B086 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				28FE7DD7237CC7BF002A3367 /* QuestionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -230,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				281A4F75237C8C5A0053B086 /* SF-Pro-Display-Semibold.otf in Resources */,
+				28FE7DDA237CDAB8002A3367 /* LoadingAlert.storyboard in Resources */,
 				286EBBE5237C483800F21B84 /* LaunchScreen.storyboard in Resources */,
 				281A4F74237C8C5A0053B086 /* SF-Pro-Display-Bold.otf in Resources */,
 				286EBBE2237C483800F21B84 /* Assets.xcassets in Resources */,
@@ -252,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281A4F7B237C9E210053B086 /* UIButton+RoundedButton.swift in Sources */,
+				28FE7DE2237CFB01002A3367 /* ChallengeQuestionVM.swift in Sources */,
+				28FB4621237D953D00564C51 /* UIView+Rounded.swift in Sources */,
+				28FE7DD6237CC5F3002A3367 /* QuestionNetwork.swift in Sources */,
+				28FE7DD8237CC7BF002A3367 /* QuestionModel.swift in Sources */,
 				286EBBDD237C483600F21B84 /* ChallengeQuestionViewController.swift in Sources */,
 				286EBBDB237C483600F21B84 /* AppDelegate.swift in Sources */,
 			);
