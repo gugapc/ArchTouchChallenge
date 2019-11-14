@@ -17,17 +17,39 @@ protocol ChallengeQuestionVMDelegate {
     ///
     /// - Parameter title: title to be setted.
     func set(title: String)
+    /// To set the rate of the answer
+    ///
+    /// - Parameter answerRate: answer rate to be setted.
+    func set(hitRate: String)
 }
 
-/// Responsible to manage the question, the list of answer and the hit rate.
+/// Responsible for managing the question, the list of answer and the hit rate.
 class ChallengeQuestionVM {
-    private var delegate: ChallengeQuestionVMDelegate
+    private let delegate: ChallengeQuestionVMDelegate
     private var questionModel: QuestionModel?
+    
+    private var foundedAnswers = [String]()
+    
+    /// To calculate the hit ratio of the questions.
+    private var hitRate: String {
+        get {
+            if let questionModel = questionModel {
+                let totalAnswers = questionModel.answer.count
+                let formattedFoundAnswers = String(format: "%02d", foundedAnswers.count)
+                let formattedTotalAnswers = String(format: "%02d", totalAnswers)
+                
+                return "\(formattedFoundAnswers)/\(formattedTotalAnswers)"
+            }
+            
+            return "00/00"
+        }
+    }
     
     init(delegate: ChallengeQuestionVMDelegate) {
         self.delegate = delegate
     }
 
+    /// Load data and update screen.
     func loadData() {
         delegate.presentLoad()
         QuestionNetwork.sharedInstance.downloadQuestion { (questionModel) in
@@ -36,6 +58,7 @@ class ChallengeQuestionVM {
                 self.delegate.dismissLoad()
                 if let questionModel = questionModel {
                     self.delegate.set(title: questionModel.question)
+                    self.delegate.set(hitRate: self.hitRate)
                 }
             }
         }

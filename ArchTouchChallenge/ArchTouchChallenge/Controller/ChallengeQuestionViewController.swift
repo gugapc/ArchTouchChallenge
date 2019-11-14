@@ -12,13 +12,17 @@ import UIKit
 class ChallengeQuestionViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var inputWordTextField: UITextField!
+    @IBOutlet weak var hitRate: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     
     private var challengeVM: ChallengeQuestionVM?
+    private var timerVM: TimerVM?
     fileprivate var loadingAlert: UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         challengeVM = ChallengeQuestionVM(delegate: self)
+        timerVM = TimerVM(delegate: self)
         // TODO: Remove border of textfield.
     }
     
@@ -48,5 +52,17 @@ extension ChallengeQuestionViewController: ChallengeQuestionVMDelegate {
 
     func set(title: String) {
         titleLabel.text = title
+    }
+    
+    func set(hitRate: String) {
+        self.hitRate.text = hitRate
+    }
+}
+
+// MARK: - TimerVMDelegate
+
+extension ChallengeQuestionViewController: TimerVMDelegate {
+    func setTime(time: String) {
+        timeLabel.text = time
     }
 }
