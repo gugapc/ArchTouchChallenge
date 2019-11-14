@@ -20,19 +20,15 @@ class QuestionNetwork {
     /// Download data and update QuestionModel
     ///
     /// - Parameter completion: callback when done
-    func downloadQuestion(completion: @escaping () -> Void) {
+    func downloadQuestion(completion: @escaping (_ questionModel: QuestionModel?) -> Void) {
         if let url = URL(string: link) {
             URLSession.shared.dataTask(with: url) { data, response, error in
                 if let data = data {
-                    defer {
-                        completion()
-                    }
                     do {
                         let res = try JSONDecoder().decode(QuestionModel.self, from: data)
-                        print(res.question)
-                        print(res.answer)
-                    } catch let error {
-                        print(error)
+                        completion(res)
+                    } catch let _ {
+                        completion(nil)
                     }
                 }
                 }.resume()

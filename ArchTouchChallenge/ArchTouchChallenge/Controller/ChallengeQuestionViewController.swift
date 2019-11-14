@@ -10,6 +10,7 @@ import UIKit
 
 /// Controller of ChallengeQuestion.
 class ChallengeQuestionViewController: UIViewController {
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var inputWordTextField: UITextField!
     
     private var challengeVM: ChallengeQuestionVM?
@@ -45,4 +46,7 @@ extension ChallengeQuestionViewController: ChallengeQuestionVMDelegate {
         }
     }
 
+    func set(title: String) {
+        titleLabel.text = title
+    }
 }
