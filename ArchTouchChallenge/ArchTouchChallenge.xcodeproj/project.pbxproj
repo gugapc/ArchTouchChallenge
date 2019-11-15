@@ -19,6 +19,7 @@
 		28FB4621237D953D00564C51 /* UIView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB4620237D953D00564C51 /* UIView+Rounded.swift */; };
 		28FB4623237DC2F700564C51 /* TimerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB4622237DC2F700564C51 /* TimerVM.swift */; };
 		28FB4627237DEDBA00564C51 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB4626237DEDBA00564C51 /* AlertManager.swift */; };
+		28FB4629237E654100564C51 /* HorizontalPaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB4628237E654100564C51 /* HorizontalPaddingTextField.swift */; };
 		28FE7DD6237CC5F3002A3367 /* QuestionNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE7DD5237CC5F3002A3367 /* QuestionNetwork.swift */; };
 		28FE7DD8237CC7BF002A3367 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE7DD7237CC7BF002A3367 /* QuestionModel.swift */; };
 		28FE7DDA237CDAB8002A3367 /* LoadingAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FE7DD9237CDAB8002A3367 /* LoadingAlert.storyboard */; };
@@ -52,6 +53,7 @@
 		28FB4620237D953D00564C51 /* UIView+Rounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded.swift"; sourceTree = "<group>"; };
 		28FB4622237DC2F700564C51 /* TimerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVM.swift; sourceTree = SOURCE_ROOT; };
 		28FB4626237DEDBA00564C51 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		28FB4628237E654100564C51 /* HorizontalPaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPaddingTextField.swift; sourceTree = SOURCE_ROOT; };
 		28FE7DD5237CC5F3002A3367 /* QuestionNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionNetwork.swift; path = ArchTouchChallenge/QuestionNetwork.swift; sourceTree = SOURCE_ROOT; };
 		28FE7DD7237CC7BF002A3367 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		28FE7DD9237CDAB8002A3367 /* LoadingAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadingAlert.storyboard; sourceTree = SOURCE_ROOT; };
@@ -93,6 +95,7 @@
 				286EBBDE237C483600F21B84 /* ChallengeQuestion.storyboard */,
 				286EBBE3237C483800F21B84 /* LaunchScreen.storyboard */,
 				28FE7DD9237CDAB8002A3367 /* LoadingAlert.storyboard */,
+				28FB4628237E654100564C51 /* HorizontalPaddingTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				28FE7DE2237CFB01002A3367 /* ChallengeQuestionVM.swift in Sources */,
 				28FB4621237D953D00564C51 /* UIView+Rounded.swift in Sources */,
 				28FE7DD6237CC5F3002A3367 /* QuestionNetwork.swift in Sources */,
+				28FB4629237E654100564C51 /* HorizontalPaddingTextField.swift in Sources */,
 				28FE7DD8237CC7BF002A3367 /* QuestionModel.swift in Sources */,
 				286EBBDD237C483600F21B84 /* ChallengeQuestionViewController.swift in Sources */,
 				28FB4623237DC2F700564C51 /* TimerVM.swift in Sources */,

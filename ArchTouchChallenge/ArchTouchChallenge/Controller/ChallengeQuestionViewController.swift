@@ -42,7 +42,7 @@ class ChallengeQuestionViewController: UIViewController {
         tableView.dataSource = self
         challengeVM = ChallengeQuestionVM(delegate: self)
         timerVM = TimerVM(delegate: self)
-        // TODO: Remove border of textfield.
+        tableView.tableFooterView = UIView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
