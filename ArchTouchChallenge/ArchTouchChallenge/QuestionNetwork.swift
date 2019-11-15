@@ -27,7 +27,7 @@ class QuestionNetwork {
                     do {
                         let res = try JSONDecoder().decode(QuestionModel.self, from: data)
                         completion(res)
-                    } catch let _ {
+                    } catch _ {
                         completion(nil)
                     }
                 }

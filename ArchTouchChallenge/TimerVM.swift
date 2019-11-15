@@ -17,10 +17,14 @@ protocol TimerVMDelegate {
 
 /// Responsible for managing the time of the challenge and notify when it ends.
 class TimerVM {
-    private let delegate: TimerVMDelegate
+    /// The timer instance.
     private var timer: Timer?
+    /// The delegate to execute some function on the controller.
+    private let delegate: TimerVMDelegate
     
-    private let totalMin = 1
+    /// Total of minutes
+    private let totalMin = 5
+    /// Total of seconds
     private let totalSec = 0
     
     init(delegate: TimerVMDelegate) {
@@ -34,7 +38,7 @@ class TimerVM {
         var minutes = totalMin
         var seconds = totalSec
         
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             if (seconds == 0) {
                 minutes -= 1
                 seconds = 59
@@ -53,12 +57,17 @@ class TimerVM {
         }
     }
     
-    /// Invalidate timer if already started and put it to initial value.
-    func resetTimer() {
+    /// To stop the timer.
+    func stopTimer() {
         if let timer = timer {
             timer.invalidate()
-            setInitialTime()
         }
+    }
+    
+    /// Invalidate timer if already started and put it to initial value.
+    func resetTimer() {
+        stopTimer()
+        setInitialTime()
     }
     
     /// Put a timer to initial value.

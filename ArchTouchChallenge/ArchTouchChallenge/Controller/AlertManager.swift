@@ -18,6 +18,7 @@ class AlertManager {
     private let congratulationMessage = "Good job! You found all the answers on time. Keep up with the great work."
     private let congratulationTextButton = "Play Again"
     
+    /// To get the single instance of this class.
     static let sharedInstance = AlertManager()
     
     private init() {}
