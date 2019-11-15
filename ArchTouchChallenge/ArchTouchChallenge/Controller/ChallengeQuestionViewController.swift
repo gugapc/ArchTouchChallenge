@@ -103,6 +103,9 @@ extension ChallengeQuestionViewController: ChallengeQuestionVMDelegate {
         if let alert = loadingAlert {
             alert.dismiss(animated: true, completion: nil)
         }
+        
+        self.titleLabel.isHidden = false
+        self.inputWordTextField.isHidden = false
     }
 
     func set(title: String) {
